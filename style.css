@@ -1,0 +1,210 @@
+body {
+    background-color: lightblue;
+}
+
+footer {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.title img {
+    width: 5%;
+    border-radius: 50%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-button {
+    width: 20%;
+    height: 50px;
+    background-color: pink;
+    cursor: pointer;
+}
+
+.media {
+    /* background-color: pink; */
+    width: 100%;
+    height: 550px;
+}
+
+.grid {
+    width: 1000px;
+    height: 900px;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.grid-container {
+    background-image: url('gameGIF.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.title-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url('sss.jpg')
+}
+
+.restart {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    background-color: pink;
+}
+
+.pause-button {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    background-color: pink;
+}
+
+.container1 {
+    width: 30%;
+    /* border: solid black 1px; */
+}
+
+.container1 h2{
+    margin-left: 5px;
+    color: white;
+    font-size: 2rem;
+}
+
+.container2 {
+    width: 69%;
+    /* border: solid black 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 h2{
+    margin-left: 10px;
+    font-size: 2rem;
+    color: white;
+}
+
+.square {
+    height: 300px;
+    width:300px;
+    border: solid black 1px;
+    background-image: url('AT logo.webp');
+}
+
+.mole {
+    background-image: url('Mole.png');
+}
+
+.gif img{
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 425px) {
+    .title img{
+        width: 10%;
+    }
+    .grid {
+        width: 100%;
+        height: 100px;
+    }
+    .grid-container{
+        width: 100%;
+        height: 500px;
+    }
+    .grid .square{
+        width: 125px;
+        height: 100px;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .mole {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .title h1 {
+        font-size: 2rem;
+    }
+    .container1 h2 {
+        font-size: 1rem;
+    }
+    .container2 h2 {
+        font-size: 1rem;
+    }
+    .media {
+        height: 150px;
+    }
+    .media img {
+        width: 50%;
+    }
+
+}
+@media only screen and (min-width:426px) and (max-width:768px) {
+    .title img{
+        width: 10%;
+    }
+    .grid {
+        width: 90%;
+        padding-left: 45px;
+        height: 600px;
+    }
+    .grid .square {
+        width: 200px ;
+        height:200px ;
+    }
+    .media {
+        height: 300px;
+    }
+    .media img {
+        width: 50%;
+    }
+    .mole {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:1024px) {
+    .title img{
+        width: 20%;
+    }
+    .grid {
+        width: 100%;
+        padding-left: 50px ;
+    }
+    .media img {
+        width: 50%;
+    }
+    .media {
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width:1440px) {
+    .title img{
+        width: 20%;
+    }
+    .media {
+        height: 450px;
+    }
+    .media img{
+        width: 40%;
+    }
+}

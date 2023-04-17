@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS game</title>
+    <script src="js-game.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <audio id="hit-sound" src="hit-sound.mp3"></audio>
+
+</head>
+
+<body>
+    <div class="title">
+        <img src="titleGIF.gif" alt="gif-title">
+        <h1> WHACK-A-FINN</h1>
+        <img src="titleGIF.gif" alt="gif-title">
+    </div>
+<div class="main">
+    <div class="title-container">
+        <div class="container1">
+            <h2> Score:</h2>
+            <h2 id="score">0 </h2>
+
+            <h2> Time Left:</h2>
+            <h2 id="time-left"> 60 </h2>
+
+            <button class="pause-button" id="pause-button"> Pause </button>
+            <button class="restart" id="restart-button">Restart</button>
+        </div>
+        <div class="container2">
+            <div class="instructions">
+                <h2> INSTRUCTIONS:</h2>
+                <h2> Oh no! Finn ate too much Finn cupcakes and needs to be stopped! Capture at least 25 to win!</h2>
+                <h2> HINT: Left click to capture </h2>
+            </div>
+
+        </div>
+    </div>
+    <div class="grid-container">
+    <div class="grid">
+        <div class="square" id="1"></div>
+        <div class="square" id="2"></div>
+        <div class="square" id="3"></div>
+        <div class="square" id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div>
+    </div>
+</div>
+    <div class="media">
+    <div class="gif" id="gif-container" alt="finn-and-jake-gif">
+
+    </div>
+    <audio id="backgroundMusic" src="IslandSong.mp3" preload="auto" loop>
+
+    </audio>
+    </div>
+</div>
+<footer> 
+    <h4>Uplift Code Camp game project by June Biadog</h4>
+</footer>
+</body>
+
+</html>
